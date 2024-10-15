@@ -1,0 +1,23 @@
+default:
+  image: "${CI_TEMPLATE_REGISTRY_HOST}/pages/hugo/hugo_extended:0.132.2"
+
+variables:
+  GIT_SUBMODULE_STRATEGY: recursive
+  HUGO_ENV: production
+  THEME_URL: "github.com/CaiJimmy/hugo-theme-stack/v3"
+
+before_script:
+  - apk add --no-cache go curl bash npm
+
+pages:
+  script:
+    # build the site and place the public folder at the root of the repository so Gitlab can see it
+    - hugo --minify -s andrelousamarques/ -d ../public
+  artifacts:
+    paths:
+      # GITLAB pages seems to ALWAYS use the public folder at the root for Pages regardless of this setting. See https://gitlab.com/groups/gitlab-org/-/epics/10126
+      - public
+  # Run only on the default branch
+  rules:
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+  environment: production

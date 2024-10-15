@@ -1,0 +1,12 @@
+<!-- GZHSUOL: See modification below -->
+<!-- MODIFIED by GZHSUOL on 08/10/2024 from https://github.com/CaiJimmy/hugo-theme-stack/blob/master/layouts/partials/article-list/default.html -->
+
+{{ $image := partialCached "helper/image" (dict "Context" . "Type" "articleList") .RelPermalink "articleList" }}
+<article class="{{ if $image.exists }}has-image{{ end }}">
+    {{ partial "article/components/header" . }}
+
+    <!-- GZHSUOL: Add summary to the article-list -->
+    <section class="article-summary">
+        {{ .Summary }}
+    </section>
+</article>

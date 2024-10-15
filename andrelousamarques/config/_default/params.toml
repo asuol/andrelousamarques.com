@@ -1,0 +1,82 @@
+# Pages placed under these sections will be shown on homepage and archive page.
+mainSections = ["post"]
+# Output page's full content in RSS.
+rssFullContent = true
+favicon = "/favicon.png"
+
+[footer]
+since = 2024
+customText = "<a href=\"/privacy\">Privacy Policy</a></br><a href=\"/terms\">Terms of Service</a></br>Some <u><a href=\"https://gitlab.com/gzhsuol/andrelousamarques.com#modified-theme-files\">modifications</a></u> to original theme"
+
+[dateFormat]
+published = "Jan 02, 2006"
+lastUpdated = "Jan 02, 2006 15:04 MST"
+
+[sidebar]
+emoji = ""
+subtitle = "Software dev blog && personal website"
+
+[sidebar.avatar]
+enabled = true
+local = true
+src = "20231021_104634_avatar.jpg"
+
+[article]
+headingAnchor = false
+math = false
+readingTime = true
+
+[article.license]
+enabled = true
+default = "Licensed under <a href=\"https://creativecommons.org/licenses/by-nc-sa/4.0/\">CC BY-NC-SA 4.0</a>"
+
+[article.toc]
+enabled = true
+
+## Widgets
+[[widgets.page]]
+type = "toc"
+
+[[widgets.homepage]]
+type = "search"
+
+[[widgets.homepage]]
+type = "categories"
+
+[widgets.homepage.params]
+limit = 10
+
+[opengraph.twitter]
+site = "gzhsuol"
+card = "summary_large_image"
+
+[defaultImage.opengraph]
+enabled = true
+local = true
+src = "andre_lousa_marques_opengraph.png"
+
+[colorScheme]
+toggle = true
+default = "auto"
+
+[imageProcessing.cover]
+enabled = true
+
+[imageProcessing.content]
+enabled = true
+
+## Comments
+[comments]
+enabled = true
+provider = "giscus"
+
+[comments.giscus]
+repo = "asuol/andrelousamarques.com"
+repoID = "R_kgDOM5glTQ"
+category = "Announcements"
+categoryID = "DIC_kwDOM5glTc4Ci73H"
+mapping = "pathname"
+lightTheme = "noborder_light"
+darkTheme = "noborder_gray"
+reactionsEnabled = 1
+emitMetadata = 0

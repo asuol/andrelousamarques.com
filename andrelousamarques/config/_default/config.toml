@@ -1,0 +1,17 @@
+baseURL = "https://www.andrelousamarques.com/"
+languageCode = "en-us"
+title = "André Lousa Marques"
+
+[[module.imports]]
+path = "github.com/CaiJimmy/hugo-theme-stack/v3"
+
+copyright = "© André Lousa Marques"
+
+# Code Highlight
+pygmentsstyle = "gruvbox"
+pygmentscodefences = true
+pygmentscodefencesguesssyntax = true
+
+paginate=10 # articles per page
+
+enableRobotsTXT=true

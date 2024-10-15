@@ -1,0 +1,23 @@
+[[social]]
+name = "Gitlab"
+url = "https://gitlab.com/gzhsuol"
+[social.params]
+icon = "brand-gitlab"
+
+[[social]]
+name = "GitHub"
+url = "https://github.com/asuol"
+[social.params]
+icon = "brand-github"
+
+[[social]]
+name = "Youtube"
+url = "https://youtube.com/@qptrail"
+[social.params]
+icon = "brand-youtube"
+
+[[social]]
+name = "X"
+url = "https://x.com/gzhsuol"
+[social.params]
+icon = "brand-x"
