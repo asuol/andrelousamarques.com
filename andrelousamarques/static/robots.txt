@@ -1,0 +1,3 @@
+UserAgent: *
+
+Sitemap: https://www.andrelousamarques.com/sitemap.xml
