@@ -43,6 +43,9 @@ type = "search"
 [[widgets.homepage]]
 type = "categories"
 
+[[widgets.homepage]]
+type = "tag-cloud"
+
 [widgets.homepage.params]
 limit = 10
 
