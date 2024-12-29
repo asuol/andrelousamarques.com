@@ -39,7 +39,7 @@ Some pages on this website allow github users to login and leave a public commen
 
 My CDN provider [bunny.net](https://bunny.net) uses the anonymized server logs to create analytics such as page view counters.
 
-Comments left my users are only used to be displayed to other users both on andrelousamarques.com and at [github.com/asuol/andrelousamarques.com/discussions](https://github.com/asuol/andrelousamarques.com/discussions).
+Comments left by users are only used to be displayed to other users both on andrelousamarques.com and at [github.com/asuol/andrelousamarques.com/discussions](https://github.com/asuol/andrelousamarques.com/discussions).
 
 No data or metadata is provided or sold to anyone else.
 
