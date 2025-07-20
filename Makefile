@@ -8,5 +8,6 @@ run:
 	docker run --rm -it -p 1313:1313 -w /work_area -v $(PWD)/andrelousamarques:/work_area hugo/andrelousamarques:v1 hugo serve --bind=0.0.0.0
 
 build-site:
-	docker run --rm -it -p 1313:1313 -w /work_area -v $(PWD)/andrelousamarques:/work_area hugo/andrelousamarques:v1  hugo --minify
+	rm -r andrelousamarques/public
+	docker run --rm -w /work_area -v $(PWD)/andrelousamarques:/work_area hugo/andrelousamarques:v1  hugo --minify
 
